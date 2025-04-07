@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <!-- --------------------DaisyUI CDN-------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- --------------CSS styles--------------- -->
+     <style>
+          .poppins {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+     </style>
+</head>
+<body class=" poppins bg-[#F4F7FF] text-[#00303C] pb-10 pt-5">
+    <nav class="flex justify-between mb-5  rounded-2xl w-[1540px] mx-auto bg-white ">
+        <div class="flex gap-2 items-center p-5">
+            <img src="images/logo.png" alt="">
+            <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+       <div class="my-auto mr-5">
+        <button class="btn btn-primary" onclick="goBack()">Back to Desk</button>
+       </div>
+    </nav>
+
+
+    <h1 class="text-2xl font-bold text-center">Blogs</h1> <br>
+
+    <div class="bg-white p-5 rounded-2xl w-[1540px] mx-auto">
+        <h3 class="mb-2 font-semibold">Question-1: What are the different ways to select an element in the DOM?</h3>  <hr> 
+        <p class="mt-2 text-gray-400">There are many ways to select an element in the DOM, such as calling ByID, By Class Name, By Tag name, By Name Attribute, using Query Selector. </p>
+    </div>
+    <br>
+    <div class="bg-white p-5 rounded-2xl w-[1540px] mx-auto">
+        <h3 class="mb-2 font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>  <hr> 
+        <p class="mt-2 text-gray-400">innerHTML sets the entire HTML structure, while innerText only sets the visible text of an element. On the other hand textContent sets the text content of an element, regardless of style or visibility.  </p>
+    </div>
+    <br>
+    <div class="bg-white p-5 rounded-2xl w-[1540px] mx-auto">
+        <h3 class="mb-2 font-semibold">Question-3: What is event delegation in the DOM?</h3>  <hr> 
+        <p class="mt-2 text-gray-400">Event delegation is a useful event handling pattern in the DOM that used to attach a single event listener to a parent, and using it to manage events for its current or future child elements.  </p>
+    </div>
+    <br>
+    <div class="bg-white p-5 rounded-2xl w-[1540px] mx-auto">
+        <h3 class="mb-2 font-semibold">Question-4: What is event bubbling in the DOM?</h3>  <hr> 
+        <p class="mt-2 text-gray-400">When an event occurs on an element, like a click, it first runs on the target element, then bubbles up to its ancestors—going from the innermost (target) element all the way up to the document.</p>
+    </div>
+    <br>
+    <div class="bg-white p-5 rounded-2xl w-[1540px] mx-auto">
+        <h3 class="mb-2 font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+
+        <hr> 
+        <p class="mt-2 text-gray-400">  Add elements can be create by using appendChild(). 
+            Example: parentElement.appendChild(newElement); <br>
+            Remove element can be create by using removeChild(). 
+            Example: parentElement.removeChild(childElement);</p>
+    </div>
+    <br>
+
+    <script src="JS/toggle.js"></script>
+</body>
+</html>

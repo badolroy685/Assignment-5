@@ -37,7 +37,14 @@ document.getElementById('btn-complete1')
            
             
             this.disabled = true; 
+
+          
+            if(remainingTask === 0 ){
+                alert('congrates!!! You have completed all the current task');
+            }
         }
+
+       
 
     })
 
@@ -66,6 +73,11 @@ document.getElementById('btn-complete2')
            
             
             this.disabled = true; 
+
+            if(remainingTask === 0 ){
+                alert('congrates!!! You have completed all the current task');
+            }
+           
         }
 
     })
@@ -94,7 +106,12 @@ document.getElementById('btn-complete3')
            
             
             this.disabled = true; 
+            
+                      if(remainingTask === 0 ){
+                            alert('congrates!!! You have completed all the current task');
+                        }
         }
+       
 
     })
 document.getElementById('btn-complete4')
@@ -122,7 +139,12 @@ document.getElementById('btn-complete4')
            
             
             this.disabled = true; 
+
+            if(remainingTask === 0 ){
+                  alert('congrates!!! You have completed all the current task');
+              }
         }
+       
 
     })
 document.getElementById('btn-complete5')
@@ -150,13 +172,17 @@ document.getElementById('btn-complete5')
            
             
             this.disabled = true; 
+            if(remainingTask === 0 ){
+                 alert('congrates!!! You have completed all the current task');
+             }
         }
+       
 
     })
 document.getElementById('btn-complete6')
     .addEventListener('click', function(){
         alert('Board updated Successfully');
-        alert('congrates!!! You have completed all the current task');
+       
         if(remainingTask > 0){
             remainingTask--;
             remainingTaskElement.textContent = remainingTask;
@@ -179,9 +205,15 @@ document.getElementById('btn-complete6')
            
             
             this.disabled = true; 
+
+            if(remainingTask === 0 ){
+                  alert('congrates!!! You have completed all the current task');
+              }
         }
+       
 
     })
+
 
     document.getElementById('clear-history')
         .addEventListener('click', function (event){

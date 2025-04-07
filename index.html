@@ -23,8 +23,10 @@
         }
        .activity1{
         background-color: #F4F7FF;
-        padding: 5px;
-         margin: 10px;
+        padding-bottom: 10px;         
+         border-radius: 16px;
+         text-align: center;
+         margin: 5px;
        }
         
     </style>
@@ -42,14 +44,14 @@
                 <p id="task-completed" class="text-3xl font-bold">23</p>
             </div>
             <div>
-                <img id="color-wheel" src="images/theme-btn.png" alt="">
+                <img id="color-wheel" class="cursor-pointer" src="images/theme-btn.png" alt="">
             </div>
         </div>
     </nav>
     <!-- -------------main section-------------- -->
      <main class="flex gap-5 mb-5 ml-[190px]">
        
-        <section class="w-[1146px] h-[880px] bg-white rounded-2xl  ">
+        <section class="w-[1146px] h-[900px] bg-white rounded-2xl  ">
 
              <!-- ------------------top section---------------- -->
 
@@ -68,7 +70,7 @@
                 </div>
 
 
-                <div class=" h-32 col-span-2   flex gap-5  items-center bg-[#F4F7FF] rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                <div id="discover" class=" h-32 col-span-2 cursor-pointer  flex gap-5  items-center bg-[#F4F7FF] rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
                    <img class="ml-10 w-15 " src="images/board.png" />
                   <div class="text-white">
                     <h1 class="text-xl font-semibold">Discover Something</h1>
@@ -189,13 +191,13 @@
         </section>
 
         <!-- -----------------Activity Section--------------- -->
-        <section class="w-[366px] h-[880px] bg-white rounded-2xl ">
+        <section class="w-[366px] h-[900px] bg-white rounded-2xl ">
             <div class="flex gap-5 justify-center my-5">
                 <img class="w-7" src="images/activity.png" alt="">
                 <p class="text-xl font-medium">Activity Log</p>
             </div>
             <button class="btn btn-primary ml-32" id="clear-history">Clear History</button> <br> <br>
-            <div class="border1"></div> <br> <br>
+            <div class="border1"></div> 
             <div id="activities">
 
             </div>
@@ -206,5 +208,6 @@
      <script src="JS/complete.js"></script>
      <script src="JS/color-wheel.js"></script>
      <script src="JS/date.js"></script>
+     <script src="JS/toggle.js"></script>
 </body>
 </html>
